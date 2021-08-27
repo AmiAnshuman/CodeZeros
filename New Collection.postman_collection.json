@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "ba57a253-ab06-4193-bd32-d47243fd59ae",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Sending CZS token to an account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recepient\":\"0x36fF74ed01250346253D1942d95019Dc27e49411\",\r\n    \"amount\":\"100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/send",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getting decimals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/decimals",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"decimals"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
