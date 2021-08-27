@@ -59,7 +59,7 @@ const initiateTransfer= async (res,recepient,amount)=>{
 
 
 
-//Retriving all the Users frim the DB
+//Retriving the decimals
 app.get('/decimals', async (req, res) => {
   try {
 
@@ -82,7 +82,7 @@ app.get('/decimals', async (req, res) => {
 
 
 
-
+//sending tokens to an address
 app.post('/send', bodyParser, async (req, res) => {
     try {
         console.log(req.body)
